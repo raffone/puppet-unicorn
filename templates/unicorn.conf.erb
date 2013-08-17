@@ -16,7 +16,7 @@ worker_processes <%= @worker_processes %>
 
 # Help ensure your application will always spawn in the symlinked
 # "current" directory that Capistrano sets up.
-working_directory "<%= @approot + '/current' %>"
+working_directory "<%= @approot %>"
 
 <% if @socket_path then -%>
 # Unix domain socket
