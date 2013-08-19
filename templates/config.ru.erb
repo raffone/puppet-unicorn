@@ -5,4 +5,5 @@
 require File.dirname(__FILE__) + '/config/environment'
 
 # Dispatch the request
-run ActionController::Dispatcher.new
+# run ActionController::Dispatcher.new # Rails 3
+run  Rails.application # Rails 4

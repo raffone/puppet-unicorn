@@ -82,7 +82,7 @@ before_fork do |server, worker|
   # to the implementation of standard Unix signal handlers, this
   # helps (but does not completely) prevent identical, repeated signals
   # from being lost when the receiving process is busy.
-  sleep <%= rolling_restarts_sleep %>
+  sleep <%= @rolling_restarts_sleep %>
 <% end -%>
 
 <% @before_fork_extras.each do |line| -%>
